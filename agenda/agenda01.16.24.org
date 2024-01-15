@@ -1,14 +1,14 @@
 * Introduction
 ** Course
    Title- COSC-338, Computer Graphics
-   Schedule- M 6-8, W 6-8
+   Schedule- M 610-730, T 610-730
    Office Hours -
      I prefer to do them virtually if possible,
        as I live 50 minutes north from here.
-     but I also can stay until 9PM on class nights, if needed.
+     but I also can stay until 8PM on class nights, if needed.
      or I can do them in person, please let me know.
    Group communication
-     Slack?  Discord?  Email?  Whatever y'all prefer, but last time my class chose Slack.
+     Does google classroom work for everyone?
    I read a lot from the text, so that you have a copy of what I say.
    You can look at the screen while I read if it's helpful to you, or not if you prefer.
 ** About Me
@@ -35,9 +35,10 @@
     Interesting semester to start teaching.
     I don't make powerpoints presentations.
       Feedback as to teaching style welcome.
+    COSC-338 in Spring 2022.
 *** Personal
 **** Family
-     My wife and I have 3 children, twins age 6, oldest age 9
+     I have 3 children, twins age 8, oldest age 11
 **** Hobbies
 ***** playing music
       on guitar, piano, bass and drums
@@ -75,9 +76,8 @@
       in order to explain the math behind computer graphics
       in a way that someone with a high school education in math can
       understand
-    and OpenGL SuperBible v4
-      an excellent book with tons of demo code, but which is lacking
-      in quality explanations of the math
+    https://learnopengl.com
+      an excellent book with tons of demo code
 
     In my experience, books in high school were friendly to the novice,
     but starting in college, that was no longer the case; for me at least.
