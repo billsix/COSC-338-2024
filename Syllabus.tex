@@ -1,0 +1,126 @@
+\documentclass[11pt,twocolumn]{article}
+\usepackage{hyperref,color}
+\usepackage[margin=.5in]{geometry}
+\usepackage{titlesec}
+\usepackage{longtable}
+\usepackage{gb4e}
+%\usepackage[margin=.75in]{geometry}
+
+\pagenumbering{gobble}
+
+%paragraph formatting
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{7pt}
+
+\titlespacing\subsection{0in}{\parskip}{\parskip}
+\titlespacing\section{0in}{\parskip}{\parskip}
+
+%Just fill these in to fill in the basic syllabus information.
+\newcommand{\coursename}{COSC-338}
+\newcommand{\semester}{Spring 2022}
+\newcommand{\classtimes}{M 6pm-8pm, W 6pm-8pm}
+\newcommand{\myname}{Bill Six}
+\newcommand{\myemail}{wesix@smcm.edu}
+\newcommand{\university}{St. Mary's College Of Maryland}
+
+\title{\coursename}
+\author{{\university}---{\semester}---{\classtimes}}
+\date{}
+
+
+\begin{document}
+\maketitle
+
+
+\section{Instructor information}
+
+\begin{tabular}{ll}
+Name:&\myname \\
+Contact:&\href{mailto:\myemail}{\myemail}\\
+\end{tabular}
+
+\section{Course description}
+
+%Add new sections and content as needed.
+Introduction to Computer Graphics, using OpenGL, both in Python and in C++.
+At the completion of COSC-338, students will be able to:
+
+\begin{enumerate}
+  \item create graphical applications in 2D and in 3D
+  \item apply coordinate-conversion transformations to objects
+  \item control a virtual camera to traverse though the scene
+  \item understand perspective projection, where objects further from the camera appear smaller
+  \item add realism via color, lighting, and images
+  \item control the application using mouse/keyboard/Game controllers, or GUI controls
+  \item C628 - At the completion of COSC338, students will be able to explain creation of computer graphics by answers to examination questions.
+  \item C629 - At the completion of COSC338, students will be able to produce an computer-generated image as demonstrated by which shows proper 3D shading.
+  \item C630 - At the completion of COSC338, students will be able to produce an computer-generated image as demonstrated by which shows proper 3D reflections.
+  \item C631 - At the completion of COSC338, students will be able to produce an computer generated image as demonstrated by which accurately depicts a light-source and its effects on the objects.
+  \item C632 - At the completion of COSC338, students will be able to use OpenGL as demonstrated by creating a computer-generated image.
+\end{enumerate}
+
+The course
+begins with an easy to understand version of OpenGL, version 2, and progresses
+to version 3.3+, which allows the programmer to create much more realism
+in the graphics.
+
+\section{Grading}
+
+\begin{center}
+\begin{tabular}{cc}
+\begin{tabular}{l|l}	%For grade items (quizzes, homework, etc.)
+Item&Percent\\\hline\hline
+Homework&40\\
+Midterm&15\\
+Final&15\\
+Projects&20\\
+Paper&10
+\end{tabular}
+&
+\begin{tabular}{ll}
+
+\end{tabular}
+\end{tabular}
+\end{center}
+
+\section{Schedule}
+
+TBD based off of feedback.  We will cover:
+
+
+\begin{enumerate}
+\item{modelviewprojection. github.com/billsix/modelviewprojection.  Covers the basics of
+  OpenGL, and how to think about placing objects in a scene, how to place a camera, and
+how to use basic inputs from the keyboard.  The duration for this material will be the first month or two, and is in Python.}
+\item{After that, we will cover OpenGL SuperBible v4, where the C++ code is at github.com/billsix/COSC-338/.  A thorough explanation of graphics
+concepts, OpenGL2, with a transition to OpenGL 3+}
+\item{Chapter 5 - Colors, Materials, and Lighting}
+\item{Chapter 8 and 9 - Texturing}
+\item{Chapter 11 and 12 - Faster Geometry Throughput, Selection}
+\item{Chapter 15 and 16 - Shader language.  Vertex Shaders}
+\item{Chapter 16 and 17 - Vertex Shaders, Fragment Shaders.}
+\item{Misc topics of interest}
+\item{This class puts an emphasis on reading code and modifying code; not writing everything from scratch.
+  There will be small projects to demonstrate understanding of the material.}
+\item{There will be a project in which you study the source of a project of your choice,
+  and write a paper about what you learned, and/or modify it to do something different.
+  The instructor will provide examples that could be suitable for study.
+  }
+
+\end{enumerate}
+
+\section{Software/OS}
+
+
+Modelviewprojection requires Python3 to be installed, and works on Linux/Windows/macOS. Spyder
+is a decent Integrated Development Environment that students may choose to use to develop and
+run code.
+On Windows, students could also Visual Studio Community, and install the Python Extension tools.
+On Mac, install Python through the regular installer, or anaconda, or through macports or homebrew.
+On Linux, use the package manager.
+
+
+
+
+
+\end{document}
