@@ -9,6 +9,7 @@
      or I can do them in person, please let me know.
    Group communication
      Does google classroom work for everyone?
+     *update* - the class said that google classroom works for them
    I read a lot from the text, so that you have a copy of what I say.
    You can look at the screen while I read if it's helpful to you, or not if you prefer.
 ** About Me
@@ -88,9 +89,7 @@
     positive or negative.  Pull requests to github are even better.
 
 *** What you will be able to write/understand
-    [Run the ch01 demo, talk about levels of realism]
-    [Run mvpVisualization/5/demo5.py]
-    [Run the McNopper Demos]
+    [Run mvpVisualization/modelviewperspectiveprojection/modelviewperspectiveprojection.py]
 
 *** Syllabus
     [display it]
