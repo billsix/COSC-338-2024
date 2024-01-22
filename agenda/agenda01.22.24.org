@@ -1,0 +1,55 @@
+* Take Attendance
+* Class Logistics
+  Make sure everyone is in the Google Classroom
+
+* http://billsix.github.io/modelviewprojection/
+  Source code is at https://github.com/billsix/modelviewprojection
+
+  Show people how to look at github, and the history of files
+** Demo 1 - Opening a Window with GLFW
+*** Run the demo
+*** Read the webpage
+*** [ask class who got python installed and can run a demo]
+*** Show about Python REPL, including importing modules]
+*** Show how to install Spyder IDE
+    use command line, and run modelviewprojection's demos with it
+    "python -m pip install spyder"
+*** Visual Studio, with the python extension, handles
+    - importing projects from Git
+    - commiting
+    - creating python virtual environments
+** Demo 2 - Normalized Device Coordinates
+*** Run the demo
+*** Read the webpage
+    Use coins while discussing the Cayley graph
+    Can understand the functions one of two ways, going with the arrow, or against
+    When going with, 1 nickel gets converted into 5 pennies
+      so, f(x) = 5 * x
+    When going against the arrow, 1 penny turns into 1 nickel
+      so it's value is now, f(x) = 5 * x
+*** Resize the window while its running to show problems with NDC
+** Show gist of first assignment, which is not yet assigned, hence no due date
+*** Run it
+*** Show Event loop
+*** Show how time is acquired
+*** Show how all coordinates are in NDC, not screen space
+*** Show how to use trig functions from the math module.
+*** Show how one would use degrees instead of radians
+*** Show how one could make a graphing calculator from -1 to 1
+***** Using points defined before program execution
+***** For an arbitrary function
+      discuss inner functions
+      discuss range, arange
+      discuss for loops
+      discuss lambdas - ask about familiarity with lambda functions in java
+        http://tutorials.jenkov.com/java/lambda-expressions.html
+      rewrite the lambda to be a function to see if it adds clarity
+** Demo 3 - Window sizing and proportionality
+   This is my least favorite section of my book
+   Most of these functions are ones that you can look up, copy and paste,
+     so it's kind of like trivia
+   It's not important that you understand all of this section yet.
+   I cover this section first because it's a base from which to
+     build the Cayley graphs.
+*** Run the demo
+*** Read the webpage
