@@ -26,12 +26,3 @@
       discuss lambdas - ask about familiarity with lambda functions in java
         http://tutorials.jenkov.com/java/lambda-expressions.html
       rewrite the lambda to be a function to see if it adds clarity
-** Demo 3 - Window sizing and proportionality
-   This is my least favorite section of my book
-   Most of these functions are ones that you can look up, copy and paste,
-     so it's kind of like trivia
-   It's not important that you understand all of this section yet.
-   I cover this section first because it's a base from which to
-     build the Cayley graphs.
-*** Run the demo
-*** Read the webpage
