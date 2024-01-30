@@ -1,0 +1,37 @@
+** Ask about programming project due Wednesday
+Has everyone got the demos up and running?
+** Reminder, demo21/demo.py is a simple program running
+*** mvpVisualization/modelviewperspectiveprojection/modelviewperspectiveprojection.py shows one frame of demo21
+*** I have changed the background colors of the meta-opengl programs to light green, like in the movie the matrix
+** Discuss first homework assignment (as compared to programming assignment)
+** Ask for questions so far.
+** Demo 3 - Window sizing and proportionality
+   This is my least favorite section of my book
+   Most of these functions are ones that you can look up, copy and paste,
+     so it's kind of like trivia
+   It's not important that you understand all of this section yet.
+   I cover this section first because it's a base from which to
+     build the Cayley graphs.
+*** Run the demo
+*** Read the webpage
+** Demo 4 - Moving paddles
+*** Run the demo
+*** Read the webpage
+** Demo 5 - Window sizing and proportionality
+   This is my least favorite section of my book
+   Most of these functions are ones that you can look up, copy and paste,
+     so it's kind of like trivia
+   It's not important that you understand all of this section yet.
+   I cover this section first because it's a base from which to
+     build the Cayley graphs.
+*** Run the demo
+*** Read the webpage
+** Demo 6 - Window sizing and proportionality
+   This is my least favorite section of my book
+   Most of these functions are ones that you can look up, copy and paste,
+     so it's kind of like trivia
+   It's not important that you understand all of this section yet.
+   I cover this section first because it's a base from which to
+     build the Cayley graphs.
+*** Run the demo
+*** Read the webpage
