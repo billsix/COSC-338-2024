@@ -1,0 +1,18 @@
+* Announce homework
+** Will be distributed on Wednesday, due a week after
+* Demo 7 - Rotations
+** Derive it again on board using angles, per Liam's description
+** Run the demo again
+** Read the webpage
+* Demo 8 - Rotation fix attempt
+** Run the demo again
+** Read the webpage
+* Demo 9  Rotation fixed
+** Run the demo again
+** Read the webpage
+* Demo 10 Camera Space
+** Run the demo again
+** Read the webpage
+* Demo 11 - Relative objects
+** Run the demo again
+** Read the webpage
