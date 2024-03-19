@@ -113,11 +113,10 @@ Language: C
 
 Code: My branch with fixes regarding camera management on Linux https://github.com/billsix/ogl
 
-##### http://learnopengl.com
+##### https://www.adriancourreges.com/blog/
 
-Language: C++
+Study rendering techniques used by real video games
 
-Code: https://github.com/JoeyDeVries/LearnOpenGL
 
 
 #### Study "Code the Classics"
