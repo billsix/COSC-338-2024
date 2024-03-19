@@ -1,0 +1,16 @@
+* Covered Demo 20 from MVP.
+Talked about how shaders were introduced, but the API was
+more or less unclanged, just augmented with shaders, with
+predefined variable names in the shaders
+* Covered Demo 21, OpenGL 3.3
+Talked about how we push modelspace data to the graphics card,
+to not have to push it from the CPU to the video cards VRAM
+every frame.  The data is pushed into VBOs (Vertex Buffer Objects).
+Since we no longer have many predefined names in the shaders,
+we need to link how to get data out of the VBO and into the shader,
+which we do by making a VAO (Vertex Array Object).
+The LearnOpenGL book that we are going to study does a better
+job explaining these steps than I did in class.
+* Started reading the PDF from LearnOpenGL.
+I will email a copy of the book to all of the students.  We ended today
+on page 13.
