@@ -1,0 +1,2 @@
+* Started reading the PDF from LearnOpenGL.
+Read from page 13 through page 29
