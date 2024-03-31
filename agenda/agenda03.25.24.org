@@ -1,0 +1,28 @@
+* Started reading the PDF from LearnOpenGL.
+We read up to page up to Page 42
+* Shader Programs, Vertex Buffer Objects (VBOs), and Vertex Array Objects (VAOs)
+All you need to know
+** We now must explicitly push vertex data to the graphic'scard's RAM, instead of the CPU's RAM.
+** We must make a shader program to process the data on the graphics card
+** To get a given vertex's data out of the VBO and into the shader, we can configure a VAO once for that shader, and per rendering, activate it as the current VAO
+
+** Good images to describe are on page 34
+*** Shows a VBO, which is memory in the graphics card's VRAM
+**** That data needs to get sent to a shader program
+Since we are using core profile shader-based OpenGL now (instead
+of the OpenGL 2.2 shader's which automatically populated
+the vertex data into the vertex shader), the vertex
+data will not be automatically populated into the vertex shader.
+As such, we need to specifiy
+***** where to get the first vertex
+***** what are they types of data
+***** how many of them are there?
+***** How many bytes ahead the next vertex data is, in the VBO
+** Page 36 has another good picture of VAOs
+*** VAO1 there just has vertex data
+*** VAO2 has an associtated VBO which has vertex position data and vertex color data next to each other
+* We talked about Element Buffer Objects
+** Don't worry about them too much, it is an optimization to know about, and shown with a picture on page 39
+*** The problem that the solve is if you have a large vertex mesh, you can have the same
+vertex in many triangles, which takes up extra data for no new information.  Instead,
+you can make an element buffer, think of it like array indicies, to potentially save space.
