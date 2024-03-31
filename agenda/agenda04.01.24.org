@@ -1,0 +1,11 @@
+* Ask class about final paper ideas
+* Start reading on Page 42
+** Shaders
+*** Gist is, we have a vertex shader and a fragment shader
+**** Vertex shader needs to get vertex data, for which there can be "n" instances of it
+**** Need to specify what type of data comes in per vertex, as an "in" variable
+**** Need to specify extra output (besides gl_position) from the vertex shader into the fragment shader, as "out" variables
+*** Need to know basic types, vec3, and what swizziling is, and how vec3 constructors work
+*** Uniforms are variable that we pass in that are constant across all "n" invocations of the shader programs
+**** No need to copy that data "n" times, if all "n" instances can just access one copy
+**** A good example of this in modelviewperspectiveprojection is the notion of time.  It's the same for every instance.
