@@ -1,4 +1,3 @@
-* Ask class about final paper ideas
 * Start reading on Page 42
 ** Shaders
 *** Gist is, we have a vertex shader and a fragment shader
@@ -42,78 +41,5 @@ This is necessary work, but not all that interesting to spend too much time on
 We now pass vertex position, color, and texture coordinates into the VBO, so we need to
 configure the VAO to pull them all out, and link them into the start of the vertex shader
 **** Bill, run src/1. getting_started/4.1.textures/
-**** The part where the author shows mixing the vertex's color with the sampled texture's color
-isn't all that interesting, other than to demonstrate the amount of flexilibilty in using shaders.
-In preshader code, this notion of mixing colors would have to be 1) thought of ahead of time
-by the creator's of the graphics drivers 2) listed as an option that we would configure.  There
-are too many ways that a programmer might want to color a fragment, so by using shader programs,
-we gain a ton of flexibility, at the expense of more convoluted code that pre-shader OpenGL.
-**** Texture Units
-The idea here is that you can bind multiple textures at once. I've never used this and
-find it uninteresting, just be aware it exists.
-** Chapter 8, Transformations
-This is some review from earlier in the class, but we will cover the math notation
-the author uses.
-Need to know vector addditon, subtraction, magnitudes.  Also multiplying a scalar by a vector
-*** Vector-vector multiplication
-Muliiplication by vectors is defined in geometric algebra, composed of a dot product and cross
-product in 3D, but the author appears to be unaware, but that's fine.
 
-**** Knowing the dot product is very important
-***** Know two things - how to do the calculations, and then also the properties, in particular that we can get the cosine of the angle between the vectors by taking the dot product of the vectors, and then dividing by the magnitudes of the two input vectors.
-If we know the cosine is 0, then the vectors are perpendicular.
-**** Knowing the cross product is very important
-***** I have a proof of the cross product if anyone is interested
-***** Bill, show your cross product demo in python
-***** Know the formula, and the properties.  1) the resulting vector is perpendicular to both input vectors. 2) The magnitude is equal to the sine between the two vectors times their magnitudes.
-*** Matricies
-**** Don't worry about matrix addition and subtraction
-**** Matrix-scalar products - the scalar could be turned into a uniform scaling matrix, to stretch the columns of the other matrix by a constant amount
-**** Matrix-vector multiplication
-This is the main operation we need to know about.  A matrix M, multiplied by vector v, is the main operation that we have focused on earlier in the class, although I didn't call it out at the time.
-I like to think of a matrix as a function to do some transformation.  So a rotation matrix R times vector v will change the coordinates, much like we did earlier in the class
-**** Matrix matrix multiplication
-This is what we did earlier in the class with function composition, the lambda stack, and the matrix stack.
-We can think of a 3x3 matrix M muliplied by another 3x3 matrix N, as multiplying M by the 3 vectors that are the
-columns of matrix N, and then using the three resulting vectors to create a new matrix, that composes the two
-transformations together.
-**** Scaling
-Should be straightforward if we look at the columns of the matrix to be the "new" x, y, and z vectors
-**** Translation
-We make our vectors use a fourth component, w, which we define to always be one, with the exception
-of after the perspective projection.  Since the perspective projection is the last step of the MVP pipeline,
-we never need to use it for translation afterwards, so having a value of non-one is not an issue.
-By giving it a value of one for every step of the MVP pipeline, we can embed a translation vector
-as the fourth column of the matrix.  Why does this matter?  It means that we can embed arbitary sequence
-of rotations and translations and scaling into 1 matrix for the whole MVP pipeline.  The alternative
-would be to have to keep track of much more values.
-**** Rotations
-We've talked about this extensively before, but these are the matrix forms.  Bill, draw up on the board
-what the columns of the matrix look like.
-***** Combining matricies
-This is done by premultiplying matricies together.  I recommend against trying to get and geometric
-intuition from matricies in the form.  Instead, I like to view each matrix as doing one thing, and
-having a composition of them.  However, premuliplied matricies in a computer provide much more
-efficient execution.
-*** GLM
-A C++ library for making a sequence of transformations, similar to what we've already seen.
-** Chapter 9, coordinate systems
-We can skip most of this
-** Chapter 10, camera
-Demonstrate how the author constructs a matrix, specifiying camera position, what it should look
-towards (down the camera's negative z axis). Understand how the author uses the cross product
-to construct the matrix
-*** Look at
-The look at matrix represents the world space to camera space transformation.
-Given that the inverse of an orthonormal matrix is the transpose, (Bill, make sure you
-explain this), what would the cameraspace to world space transformation be?  How would
-you read it, left to right, or right to left?
-*** Bill, run the code for 1.getting_started/7.4.camera_class/
-
-** Chapter 12, Colors
-** Chapter 13, Basic Lighting
-** Chapter 14, Materials
-** Chapter 35, Shadow mapping
-** Chapter 15, lighting maps
-** Chapter 16, Light casters
-** Chapter 17, Multiple Lights
+We got to about page 60, resuming the rest on Tuesday
