@@ -1,0 +1,46 @@
+* Homework will be assigned on Wednesday 04.09, due a week from Wednesday 04.16
+**** Matrix matrix multiplication
+This is what we did earlier in the class with function composition, the lambda stack, and the matrix stack.
+We can think of a 3x3 matrix M muliplied by another 3x3 matrix N, as multiplying M by the 3 vectors that are the
+columns of matrix N, and then using the three resulting vectors to create a new matrix, that composes the two
+transformations together.
+**** Scaling
+Should be straightforward if we look at the columns of the matrix to be the "new" x, y, and z vectors
+**** Translation
+We make our vectors use a fourth component, w, which we define to always be one, with the exception
+of after the perspective projection.  Since the perspective projection is the last step of the MVP pipeline,
+we never need to use it for translation afterwards, so having a value of non-one is not an issue.
+By giving it a value of one for every step of the MVP pipeline, we can embed a translation vector
+as the fourth column of the matrix.  Why does this matter?  It means that we can embed arbitary sequence
+of rotations and translations and scaling into 1 matrix for the whole MVP pipeline.  The alternative
+would be to have to keep track of much more values.
+**** Rotations
+We've talked about this extensively before, but these are the matrix forms.  Bill, draw up on the board
+what the columns of the matrix look like.
+***** Combining matricies
+This is done by premultiplying matricies together.  I recommend against trying to get and geometric
+intuition from matricies in the form.  Instead, I like to view each matrix as doing one thing, and
+having a composition of them.  However, premuliplied matricies in a computer provide much more
+efficient execution.
+*** GLM
+A C++ library for making a sequence of transformations, similar to what we've already seen.
+** Chapter 9, coordinate systems
+We can skip most of this
+** Chapter 10, camera
+Demonstrate how the author constructs a matrix, specifiying camera position, what it should look
+towards (down the camera's negative z axis). Understand how the author uses the cross product
+to construct the matrix
+*** Look at
+The look at matrix represents the world space to camera space transformation.
+Given that the inverse of an orthonormal matrix is the transpose, (Bill, make sure you
+explain this), what would the cameraspace to world space transformation be?  How would
+you read it, left to right, or right to left?
+*** Bill, run the code for 1.getting_started/7.4.camera_class/
+
+** Chapter 12, Colors
+** Chapter 13, Basic Lighting
+** Chapter 14, Materials
+** Chapter 35, Shadow mapping
+** Chapter 15, lighting maps
+** Chapter 16, Light casters
+** Chapter 17, Multiple Lights
