@@ -1,0 +1,5 @@
+* Homework will be assigned on Wednesday 04.09, due a week from Wednesday 04.16
+** Chapter 25, Face culling
+We covered winding order, right hand rule
+** Chapter 12, Colors
+We covered page 110-121

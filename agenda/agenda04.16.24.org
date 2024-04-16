@@ -1,0 +1,74 @@
+* Ask class about final papers
+* We have class this week and next, and that's it.
+* I did not assign homework that was supposed to be given out 04.09.
+Students get 100% on it, as such
+* Homework will be assigned on Wednesday 04.17, due a week from Wednesday 04.24
+** Chapter 13, Basic Lighting
+Start with section 13.5.
+Normals should not be transformed the same was as modelspace data, with the MVP pipeline.
+1) normals should not be translated.  Students should know how to ensure that
+2) For a matrix that rotates and uniformly scales, that matrix could be applied
+   to normals as well.  But if there is non-uniform scaling, if that matrix
+   is applied to modelspace data, the resulting transformed normal may not
+   be normal to the triangle.
+
+   Let's say the matrix is called F, transforming to another space
+   F*x
+
+   let's say p is the vector from 2 points on the triangle, p is for
+   parallel to the plane
+
+   Let's say the normal, named t, is perpendicular
+   We therefore know that t dot p = 0
+   We therefore know that (t transposed) *  p = 0
+
+   We'd like a matrix to transform normals, while keeping them parallel.
+   Let's call this matrix G
+
+   We'd like   (G*t)transposed * F*p = 0
+   t transposed * G transposed * F*p = 0
+   If G transposed * F is the identity matrix, then it works, because (t transposed) *  p = 0
+
+   G transposed * F = I
+   G transposed * F = I
+   G transposed = F^-1 * I
+   G transposed = F^-1
+   G = F^-1 transposed
+
+** know ambient, diffuse, and specular (learn Blinn-Phong, with the half angles - it looks better and is easier to understand, page 273
+
+** Chapter 14, Materials
+
+The beginning starts off weird. with too much light.
+It's better on page 129 where the material has non-1 values for ambient, diffuse, and specular.
+
+*** Skip lighting maps, skip specular maps
+
+** Chapter 22, depth testing
+
+based off of how the standard perspective matrix is defined, camera space z values
+are not scaled linearly when transforming the z values to NDC.
+
+This is good because it minimizes z-fighting for vertices close to the viewer.
+
+You should be able to tell how to visualize the depth buffer.  Because we have fragment
+shaders, we can control what color is set on a per-fragment basis
+
+** Chapter 24, blending
+
+understand discarding, an easy way to make fragments transparent.
+
+Learn about alpha value, and the various ways to mix colors on the same fragment.
+
+Show model view projection demo, demo 21, show how blending is used there.  rotate
+the square to be in the line of sight of the paddle.
+Look at it from both sides.
+Students should be able to explain blending only works in one of the directions,
+and makes the square disapppear in the other direction.
+
+This is the same problem that the z buffer solved for us for triangles.
+
+There are techniques for order-independent blending, covered in other texts,
+such as the OpenGL SuperBible (blue book)
+
+** Chapter 35, Shadow mapping
