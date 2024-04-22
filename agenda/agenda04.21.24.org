@@ -1,0 +1,42 @@
+* Ask class about final papers, due date was already sent on google classroom.
+I will also send a google classroom project for you guys to send your paper in.
+* We have class this week, and that's it
+* Final exam date TBD
+* I did not assign homework that was supposed to be given out 04.09.
+Students get 100% on it, as such
+* Homework will be assigned on Wednesday 04.17, due a week from Wednesday 04.24
+** Chapter 13, Basic Lighting
+** Chapter 22, depth testing
+
+based off of how the standard perspective matrix is defined, camera space z values
+are not scaled linearly when transforming the z values to NDC.
+
+This is good because it minimizes z-fighting for vertices close to the viewer.
+
+You should be able to tell how to visualize the depth buffer.  Because we have fragment
+shaders, we can control what color is set on a per-fragment basis
+
+** Chapter 24, blending
+
+understand discarding, an easy way to make fragments transparent.
+
+Learn about alpha value, and the various ways to mix colors on the same fragment.
+
+Show model view projection demo, demo 21, show how blending is used there.  rotate
+the square to be in the line of sight of the paddle.
+Look at it from both sides.
+Students should be able to explain blending only works in one of the directions,
+and makes the square disapppear in the other direction.
+
+This is the same problem that the z buffer solved for us for triangles.
+
+There are techniques for order-independent blending, covered in other texts,
+such as the OpenGL SuperBible (blue book)
+
+** Chapter 19-21, model loading
+
+Gist here, is that everything we learned for one triangle can be applied
+to a large mesh of triangles made by an artist.  The math is the same,
+there's just a ton of triangles.
+
+** Chapter 35, Shadow mapping
